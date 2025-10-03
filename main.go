@@ -167,10 +167,7 @@ func main() {
 		return
 	}
 
-	// вывод посылок клиента
-	// здесь не должно быть последней посылки, так как она должна была успешно удалиться
 	err = service.PrintClientParcels(client)
-	
 	if err != nil {
 		fmt.Println(err)
 		return
